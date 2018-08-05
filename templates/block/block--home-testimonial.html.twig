@@ -1,0 +1,25 @@
+<section class="reviewsWrap">
+  <div class="container">
+      <div class="sectionTitle">
+          <span class="icon"><img src="/{{ directory }}/images/upload/icon-pillars.png"></span>
+          <p>BETTER LIFE <span>REVIEWS</span></p>
+      </div>
+      <div class="imgWrap">
+          <div class="profilePic picPos-01"><span class="tab" data-attr="1"><img src="/{{ directory }}/images/upload/profile-pic01.jpg"></span></div>
+          <div class="profilePic picPos-02"><span class="tab" data-attr="2"><img src="/{{ directory }}/images/upload/profile-pic02.jpg"></span></div>
+          <div class="profilePic picPos-03"><span class="tab" data-attr="3"><img src="/{{ directory }}/images/upload/profile-pic03.jpg"></span></div>
+          <div class="profilePic profilePicMain"><span class="tab" data-attr="0"><img src="/{{ directory }}/images/upload/profile-mandar-sohoni.jpg"></span></div>
+          <div class="profilePicFrame"></div>
+      </div>
+      <div class="content">
+          <div class="profileWrap">
+          {% for data in content["#data_obj"] %}
+              <div class="profileBox">
+                  {{ data.desc|raw }}
+                  <p class="name">{{ data.title}}</p>
+              </div>
+          {% endfor %}
+          </div>
+      </div>                    
+  </div>
+</section>

@@ -1,0 +1,19 @@
+  <!-- homeBanner starts-->
+            <div class="homeBanner">
+                <a href="javascript:;" class="scroll">Scroll</a>
+                
+                <div class="bannerCarousel owl-carousel">
+                    <!-- <div class="item" data-videosrcDesk="http://www.w3schools.com/html/mov_bbb.mp4" data-videosrcDevice="https://www.w3schools.com/tags/movie.mp4" data-videosrc=""> -->
+                    {% for data in content["#data_obj"] %}
+                        <div class="item">
+                          <img class="bannerImage" data-srcdesktop="{{ data.fieldImagePath }}" data-srcdevice="/{{ directory }}/images/upload/homebanner01-mobile.jpg" src="/{{ directory }}/images/spacer.gif" alt="">
+                          <div class="content">
+                              <img src="/{{ directory }}/images/logo-lodha-black.png" alt="Lodha">
+                              <p>{{ data.title }}</p>
+                              <a href="{{ data.fieldLinkUrl }}" class="btn btn-black">{{ data.fieldLink }}</a>
+                          </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <!-- homeBanner ends-->

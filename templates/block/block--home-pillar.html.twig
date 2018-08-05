@@ -1,0 +1,24 @@
+
+<div class="container">
+    <div class="pillarsCarousel">
+    {% for datas in content["#data_obj"] |batch(3) %}
+        <div class="slide">
+         {% for data in datas %}
+            <div class="item">
+                <div class="wrapper">
+                    <span class="square one"></span>
+                    <span class="square two"></span>
+                    <span class="square three"></span>
+                    <span class="square four"></span>
+                {% set numberOfWords = data.title|split(' ')|length %}
+                {% set array = data.title|split(' ', numberOfWords) %}
+                <p class="title"><strong>{{ data.fieldSequence }}</strong>{{ data.title|trim(attribute(array, numberOfWords-1)) }} <span>{{ attribute(array, numberOfWords-1) }}</span></p>
+                <span class="svgBox" data-svg="{{ data.imagePath }}"></span>
+                <p class="details">{{ data.body}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,20 @@
+
+<section class="blogsWrap">
+    <div class="container paddingBoth">
+        <div class="sectionTitle">
+            <span class="icon"><img src="/{{ directory }}/images/upload/icon-pillars.png"></span>
+            <p>Blogging <span>Life Better!</span></p>
+        </div>
+        <div class="blogsContainer">
+             {% for data in content["#data_obj"] %}
+                <div class="blog">
+                    <p class="date">{{ data.date }}</p>
+                    <p class="title"> {{ data.title }}</p>
+                    <p>{{ data.body|raw }}</p>
+                    <a href="{{ data.alias}}" class="arrowLink">Read More</a>
+                </div> 
+            {% endfor %}
+            <div class="buttonWrap"><a href="/blog" class="btn">View All</a></div>
+        </div>
+    </div>
+</section>
