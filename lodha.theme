@@ -53,3 +53,7 @@ function basic_preprocess_field(&$variables, $hook) {
   // Make additional variables available to the template.
   $variables['bundle'] = $variables['element']['#bundle'];
 }
+
+function lodha_preprocess_page(&$variables){
+  kint($variables);
+}
