@@ -1,0 +1,30 @@
+
+/*GREEN THEME START*/
+.themeGreen .sectionTitle p,
+.themeGreen .propertyPrice .carousel .slide p span {
+    color: #024800 !important;
+}
+
+.themeGreen .propertyPrice .carousel .slide .hover,
+.themeGreen .propertyDetails{
+    background-color: #024800 !important;
+}
+.themeGreen .sectionTitle .icon svg path,
+.themeGreen .section-logo svg path {    fill: #024800 !important;
+}
+
+/*Blue THEME START*/
+.themeBlue .sectionTitle p,
+.themeBlue .propertyPrice .carousel .slide p span {
+    color: #005192 !important;
+}
+
+.themeBlue .propertyPrice .carousel .slide .hover,
+.themeBlue .propertyDetails{
+    background-color: #005192 !important;
+}
+.themeBlue .sectionTitle .icon svg path,
+.themeBlue .section-logo svg path {
+    fill: #005192 !important;
+}
+

@@ -1,5 +1,9 @@
 var isIOS;
-(function ($) {
+
+$(function() {
+    svgloader(".svgBox");
+})
+
 function svgEditorForIE(_thisParam) {
     var _this = _thisParam;
     if (_this.find("svg").length) {
@@ -50,6 +54,10 @@ var dataSkroller = function() {
     }
 }
 
+
+
+
+
 var svgloader = function(target) {
     $(target).each(function(index) {
         var svgPath = $(this).attr("data-svg");
@@ -61,6 +69,8 @@ var svgloader = function(target) {
                 var svgParent = Snap(_this);
                 svgParent.append(data);
                 var svg = svgParent.select("svg");
+
+
             }
         }
     });
@@ -68,13 +78,8 @@ var svgloader = function(target) {
 }
 var isIE = false;
 
-
 $(window).on("scroll", function() {
     //Do Something On each Scroll;
     dataSkroller();
     svgEditorForIE($(this));
 })
-
-
-    svgloader(".svgBox");
-}(jQuery));

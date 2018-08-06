@@ -10,17 +10,31 @@ global:
     theme:
       css/theme/theme.css: {}
       css/theme/print.css: { media: print }
-      css/owl.carousel.css: {}
       css/animate.css: {}
+      css/flexslider.css: {}
       css/jquery-ui.css: {}
+      css/lightbox.min.css: {}
+      css/needsharebutton.min.css: {}
+      css/owl.carousel.css: {}
       css/style.css: {}
+      css/theme.css: {}
+
   js:
-    js/owl.carousel.js: {}
+    js/common_ri.js: {}
+    js/common.js: {}
     js/jquery-ui.js: {}
+    js/jquery.flexslider.js: {}
+    js/jquery.mousewheel.min.js: {}
     js/jquery.ui.touch-punch.min.js: {}
+    js/lightbox.min.js: {}
+    js/map-places-search.js: {}
+    js/modernizr.js: {}
+    js/needsharebutton.min.js: {}
+    js/owl.carousel.js: {}
+    js/selectivizr-min.js: {}
     js/snap.svg.js: {}
     js/svg-and-scroll.js: {}
-    js/common.js: {}
+
     
     #js/build/scripts.js: {}
   dependencies:
