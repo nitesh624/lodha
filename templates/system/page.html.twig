@@ -105,15 +105,8 @@
 {# {{ node.field_project_amenities }}<br/>
 	
 {{ paragraph.field_project_amenities.value }} #}
-{{ node.field_project_amenities.entity.field_amenities_sustainability_i[1] }}
-{{ node.field_project_amenities.entity.field_amenities_slider.entity.field_image_carousel_images.value }}
-
-
-{% for key,value in node.field_project_amenities.value %}
-    {{ content.field_amenities_slider }}
-{% endfor %}
-
-
+{{ content.field_project_amenities.entity.field_amenities_sustainability_i.value }}
+{{ content.field_project_amenities.entity.field_amenities_slider.entity.field_image_carousel_images.value }}
 
 
 
