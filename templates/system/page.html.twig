@@ -100,9 +100,9 @@
 <h1>uishdsidsd</h1>
 
 {# {{ node.field_amenities_sustainability_i. }}<br/> #}
-{{ node.body.value }}<br/>
+{{ node.body.value | raw }}<br/>
 {{ node.field_project_scheme_title.value }}<br/>
-{{ node.field_project_amenities.value }}<br/>
+{{ node.field_parts[0].entity.field_project_amenities.value | raw }}
 
 
 
