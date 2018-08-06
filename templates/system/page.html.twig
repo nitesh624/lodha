@@ -98,20 +98,22 @@
 
 
 <h1>uishdsidsd</h1>
-{{ kint(page) }}
 {# {{ node.field_amenities_sustainability_i. }}<br/> #}
 {{ node.body.value | raw }}<br/>
 {{ node.field_project_scheme_title.value }}<br/>
 {# {{ node.field_project_amenities }}<br/>
 	
 {{ paragraph.field_project_amenities.value }} #}
-{{ node.field_project_amenities.entity.field_amenities_sustainability_i.value }}
-{{ node.field_project_amenities.entity.field_amenities_slider.entity.field_image_carousel_images.value }}
+{{ paragraph.field_project_amenities.entity.field_amenities_sustainability_i.value }}
+{{ paragraph.field_project_amenities.entity.field_amenities_slider.entity.field_image_carousel_images.value }}
 
 
 {% for key,value in node.field_project_amenities.value %}
     {{ content.field_amenities_slider }}
 {% endfor %}
+
+
+
 
 
   </main>

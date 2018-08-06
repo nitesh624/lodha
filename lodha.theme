@@ -54,6 +54,3 @@ function basic_preprocess_field(&$variables, $hook) {
   $variables['bundle'] = $variables['element']['#bundle'];
 }
 
-function lodha_preprocess_node(&$variables){
-  kint($variables);
-}
