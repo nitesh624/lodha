@@ -102,10 +102,10 @@
 {# {{ node.field_amenities_sustainability_i. }}<br/> #}
 {{ node.body.value | raw }}<br/>
 {{ node.field_project_scheme_title.value }}<br/>
-{{ node.field_project_amenities }}<br/>
+{# {{ node.field_project_amenities }}<br/>
 	
-{{ paragraph.field_project_amenities.value }}
-
+{{ paragraph.field_project_amenities.value }} #}
+{{ node.field_project_amenities.entity.field_amenities_sustainability_i.value }}
 
 
 
