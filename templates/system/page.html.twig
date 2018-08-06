@@ -98,14 +98,15 @@
 
 
 <h1>uishdsidsd</h1>
+
 {# {{ node.field_amenities_sustainability_i. }}<br/> #}
 {{ node.body.value | raw }}<br/>
 {{ node.field_project_scheme_title.value }}<br/>
 {# {{ node.field_project_amenities }}<br/>
 	
 {{ paragraph.field_project_amenities.value }} #}
-{{ paragraph.amenities.field_amenities_sustainability_i.value }}
-{{ paragraph.field_project_amenities.entity.field_amenities_slider.entity.field_image_carousel_images.value }}
+{{ node.field_project_amenities.entity.field_amenities_sustainability_i[1] }}
+{{ node.field_project_amenities.entity.field_amenities_slider.entity.field_image_carousel_images.value }}
 
 
 {% for key,value in node.field_project_amenities.value %}
