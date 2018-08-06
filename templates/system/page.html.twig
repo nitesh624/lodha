@@ -109,6 +109,9 @@
 {{ node.field_project_amenities.entity.field_amenities_slider.entity.field_image_carousel_images.value }}
 
 
+{% for key,value in node.field_project_amenities.value %}
+    {{ content.field_amenities_slider }}
+{% endfor %}
 
 
   </main>
