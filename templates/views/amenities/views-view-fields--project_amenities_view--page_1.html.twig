@@ -54,71 +54,289 @@
   {%- endif %}
 {%- endfor %}
 #}
-{% set field_amenities_type
-<div id="internal" class="amenityTabs">
-    <div class="thumbSlider">
-        <div id="internalPaging" class="paging">
-            <span class="currentSlide">1</span> / <span class="totalSlides"></span>
-        </div>                                
-        <div class="sliderAmenities flexslider" navFor="internalPaging">
-            <ul class="slides flexImg">
-                <li>
-                {{ fields.field_amenities_slider.content }}
-                <p class="flex-caption">Modern, fully air-conditioned residence Internal</p>
-                </li>
-            </ul>
-        </div>
-
-        
+ <div class="subHeader">
+    <div class="breadcrumb">
+        <ul>
+            <li><a href="javascript:;">Home</a></li>
+            <li><a href="javascript:;">Residential Properties</a></li>
+            <li><a href="javascript:;">Amara</a></li>
+            <li>About</li>
+        </ul>
     </div>
-    <div class="container">
-    <ul class="listComponent">
-            <li>Dedicated wardrobe niches, separate store room^, puja room and utility area</li>
-            <li>Marbital® flooring** in the living room, dining room, passage areas & bedrooms</li>
-            <li>High-quality bath fittings by Roca, Kohler and Jaquar**</li>
+    <div class="topNav">
+        <ul>
+            <li><a href="javascript:;" class="active">About</a></li>
+            <li><a href="javascript:;">Location</a></li>
+            <li><a href="javascript:;">Plans & Price</a></li>
+            <li><a href="javascript:;">Amenities</a></li>
+            <li><a href="javascript:;">Gallery</a></li>
         </ul>
-        <ul class="listComponent hide" id="list1">
-            <li>Dedicated wardrobe niches, separate store room^, puja room and utility area</li>
-            <li>Marbital® flooring** in the living room, dining room, passage areas & bedrooms</li>
-            <li>High-quality bath fittings by Roca, Kohler and Jaquar**</li>
-        </ul>
-        <p class="toggleBtn"><a href="javascript:;" toggleContent="list1"><span class="more">More <span class="operators">+</span></span><span class="less">less <span class="operators">-</span></span></a></p>
-        <p class="notes">*Except kitchen, passage and bathroom</p>
-    </div>
-</div>                            <div id="internal" class="amenityTabs">
-    <div class="thumbSlider">
-        <div id="internalPaging" class="paging">
-            <span class="currentSlide">1</span> / <span class="totalSlides"></span>
-        </div>                                
-        <div class="sliderAmenities flexslider" navFor="internalPaging">
-            <ul class="slides flexImg">
-                <li>
-                <img src="images/floor-plan.jpg" />
-                <p class="flex-caption">Modern, fully air-conditioned residence Internal</p>
-                </li>
-                <li>
-                <img src="images/floor-plan.jpg" />
-                <p class="flex-caption">Modern, fully air-conditioned residence</p>
-                </li>
-                <li>
-                <img src="images/floor-plan.jpg" />
-                <p class="flex-caption">Modern, fully air-conditioned residence</p>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="container">
-    <ul class="listComponent">
-            <li>Dedicated wardrobe niches, separate store room^, puja room and utility area</li>
-            <li>Marbital® flooring** in the living room, dining room, passage areas & bedrooms</li>
-            <li>High-quality bath fittings by Roca, Kohler and Jaquar**</li>
-        </ul>
-        <ul class="listComponent hide" id="list1">
-            <li>Dedicated wardrobe niches, separate store room^, puja room and utility area</li>
-            <li>Marbital® flooring** in the living room, dining room, passage areas & bedrooms</li>
-            <li>High-quality bath fittings by Roca, Kohler and Jaquar**</li>
-        </ul>
-        <p class="toggleBtn"><a href="javascript:;" toggleContent="list1"><span class="more">More <span class="operators">+</span></span><span class="less">less <span class="operators">-</span></span></a></p>
-        <p class="notes">*Except kitchen, passage and bathroom</p>
     </div>
 </div>
+
+
+<section class="amenities">
+        <div class="container">
+            <div class="sectionTitle">
+                <span class="icon"><img src="images/icon-amenities.png"></span>
+                <p>Our <span>Amenities</span></p>
+            </div>
+    </div>
+</section>
+<section class="amenitiesSlider">
+        <div class="container">
+            <div class="tabsComponent customTabs">
+                <ul commonTab="amenityTabs">
+                    <li tabName="internal" amenitySlider="true" class="activeTab">Internal</li>
+                    <li tabName="external" amenitySlider="true">External</li>
+                </ul>
+            </div>
+        </div>
+        <div class="amenityTabsHolder flexgallery">
+                <div id="internal" class="amenityTabs">
+                    <div class="thumbSlider">
+                        <div id="internalPaging" class="paging">
+                            <span class="currentSlide">1</span> / <span class="totalSlides"></span>
+                        </div>                                
+                        <div class="sliderAmenities flexslider" navFor="internalPaging">
+                            <ul class="slides flexImg">
+                                <li>
+                                <img src="images/floor-plan.jpg" />
+                                <p class="flex-caption">Modern, fully air-conditioned residence Internal</p>
+                                </li>
+                                <li>
+                                <img src="images/floor-plan.jpg" />
+                                <p class="flex-caption">Modern, fully air-conditioned residence</p>
+                                </li>
+                                <li>
+                                <img src="images/floor-plan.jpg" />
+                                <p class="flex-caption">Modern, fully air-conditioned residence</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container">
+                    <ul class="listComponent">
+                            <li>Dedicated wardrobe niches, separate store room^, puja room and utility area</li>
+                            <li>Marbital® flooring** in the living room, dining room, passage areas & bedrooms</li>
+                            <li>High-quality bath fittings by Roca, Kohler and Jaquar**</li>
+                        </ul>
+                        <ul class="listComponent hide" id="list1">
+                            <li>Dedicated wardrobe niches, separate store room^, puja room and utility area</li>
+                            <li>Marbital® flooring** in the living room, dining room, passage areas & bedrooms</li>
+                            <li>High-quality bath fittings by Roca, Kohler and Jaquar**</li>
+                        </ul>
+                        <p class="toggleBtn"><a href="javascript:;" toggleContent="list1"><span class="more">More <span class="operators">+</span></span><span class="less">less <span class="operators">-</span></span></a></p>
+                        <p class="notes">*Except kitchen, passage and bathroom</p>
+                    </div>
+                </div>
+                <div id="external" class="amenityTabs">
+                    <div class="thumbSlider">
+                        <div id="externalPaging" class="paging">
+                            <span class="currentSlide">1</span> / <span class="totalSlides"></span>
+                        </div>                                
+                        <div class="sliderAmenities flexslider" navFor="externalPaging">
+                            <ul class="slides flexImg">
+                                    <li>
+                                    <img src="images/floor-plan.jpg" />
+                                    <p class="flex-caption">Modern, fully air-conditioned residence External</p>
+                                    </li>
+                                    <li>
+                                    <img src="images/floor-plan.jpg" />
+                                    <p class="flex-caption">Modern, fully air-conditioned residence</p>
+                                    </li>
+                                    <li>
+                                    <img src="images/floor-plan.jpg" />
+                                    <p class="flex-caption">Modern, fully air-conditioned residence</p>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container">
+                            <ul class="listComponent">
+                                    <li>Dedicated wardrobe niches, separate store room^, puja room and utility area</li>
+                                    <li>Marbital® flooring** in the living room, dining room, passage areas & bedrooms</li>
+                                    <li>High-quality bath fittings by Roca, Kohler and Jaquar**</li>
+                                </ul>
+                                <ul class="listComponent hide" id="list2">
+                                    <li>Dedicated wardrobe niches, separate store room^, puja room and utility area</li>
+                                    <li>Marbital® flooring** in the living room, dining room, passage areas & bedrooms</li>
+                                    <li>High-quality bath fittings by Roca, Kohler and Jaquar**</li>
+                                </ul>
+                                <p class="toggleBtn"><a href="javascript:;" toggleContent="list2"><span class="more">More <span class="operators">+</span></span><span class="less">less <span class="operators">-</span></span></a></p>
+                                <p class="notes">*Except kitchen, passage and bathroom</p>
+                            </div>
+                </div>
+            </div>
+</section>
+<section class="accordianWrap">
+    <div class="container">
+        <div class="accordian-container">
+            <p class="heading">SUSTAINABILITY INITIATIVE FOR
+                    THE ENVIRONMENT</p>
+            <div class="accordCont"><p>Content PRICE TRENDS</p></div>
+        </div>
+
+    </div>
+</section>
+<section class="propertyDetails">
+    <div class="container">
+        <div class="wrapper">
+            <p>
+                Price: <strong>`69.3 Lacs onwards</strong>
+            </p>
+            <p>
+                Typology: <strong>2, 3 BHK</strong>
+            </p>
+            <p>
+                Possession Date: <strong>Oct 2019</strong>
+            </p>
+            <p>
+                Location: <strong>Thane</strong>
+            </p>
+        </div>
+    </div>
+    <div class="propertyMenu">
+        <p class="fav"><a href="javascript:;"><img src="images/icon-favourite-gold.png" alt=""></a></p>
+        <p id="share-button-2" class="need-share-button-default" data-share-icon-style="box" data-share-networks="Mailto,Twitter,Facebook,Linkedin"></p>
+        <p class="download"><a href="javascript:;" target="_blank"><img src="images/icon-download.png" alt=""></a></p>
+    </div>
+</section>
+
+
+<!-- Section residential Starts -->
+<section class="residential">
+    <div class="container">
+        <div class="wrapper">
+            <div class="resdient-slider owl-carousel">
+                <div class="slides">
+                    <div class="res-head flex-wrp">
+                        <div class="head-txt">
+                            <h3>LODHA SPLENDORA 1</h3>
+                            <p>Ghodbunder Road, Thane</p>
+                        </div>
+                        <div class="rating">
+                            <!-- <span class="sprite-star"></span> -->
+                            <img src="images/aspi/star.png" alt="star">
+                        </div>
+                    </div>
+                    <div class="inner-slider owl-carousel">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                    </div>
+                    <div class="possession-wrp">
+                        <p>Possession Date: <span>Oct 2019</span></p>
+                        <p><span>2, 3 BHK</span> | <span>Price: 2.5 to 5 Cr</span></p>
+                    </div>
+                    <div class="slide-footer">
+                        <p>Offer : <span>5:90:5 Scheme</span></p>
+                    </div>
+                </div>
+                <div class="slides">
+                    <div class="res-head flex-wrp">
+                        <div class="head-txt">
+                            <h3>LODHA SPLENDORA 2</h3>
+                            <p>Ghodbunder Road, Thane</p>
+                        </div>
+                        <div class="rating">
+                            <!-- <span class="sprite-star"></span> -->
+                            <img src="images/aspi/star.png" alt="star">
+                        </div>
+                    </div>
+                    <div class="inner-slider owl-carousel">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                    </div>
+                    <div class="possession-wrp">
+                        <p>Possession Date: <span>Oct 2019</span></p>
+                        <p><span>2, 3 BHK</span> | <span>Price: 2.5 to 5 Cr</span></p>
+                    </div>
+                    <div class="slide-footer">
+                        <p>Offer : <span>5:90:5 Scheme</span></p>
+                    </div>
+                </div>
+                <div class="slides">
+                    <div class="res-head flex-wrp">
+                        <div class="head-txt">
+                            <h3>LODHA SPLENDORA 3</h3>
+                            <p>Ghodbunder Road, Thane</p>
+                        </div>
+                        <div class="rating">
+                            <!-- <span class="sprite-star"></span> -->
+                            <img src="images/aspi/star.png" alt="star">
+                        </div>
+                    </div>
+                    <div class="inner-slider owl-carousel">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                    </div>
+                    <div class="possession-wrp">
+                        <p>Possession Date: <span>Oct 2019</span></p>
+                        <p><span>2, 3 BHK</span> | <span>Price: 2.5 to 5 Cr</span></p>
+                    </div>
+                    <div class="slide-footer">
+                        <p>Offer : <span>5:90:5 Scheme</span></p>
+                    </div>
+                </div>
+                <div class="slides">
+                    <div class="res-head flex-wrp">
+                        <div class="head-txt">
+                            <h3>LODHA SPLENDORA 4</h3>
+                            <p>Ghodbunder Road, Thane</p>
+                        </div>
+                        <div class="rating">
+                            <!-- <span class="sprite-star"></span> -->
+                            <img src="images/aspi/star.png" alt="star">
+                        </div>
+                    </div>
+                    <div class="inner-slider owl-carousel">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                    </div>
+                    <div class="possession-wrp">
+                        <p>Possession Date: <span>Oct 2019</span></p>
+                        <p><span>2, 3 BHK</span> | <span>Price: 2.5 to 5 Cr</span></p>
+                    </div>
+                    <div class="slide-footer">
+                        <p>Offer : <span>5:90:5 Scheme</span></p>
+                    </div>
+                </div>
+                <div class="slides">
+                    <div class="res-head flex-wrp">
+                        <div class="head-txt">
+                            <h3>LODHA SPLENDORA 5</h3>
+                            <p>Ghodbunder Road, Thane</p>
+                        </div>
+                        <div class="rating">
+                            <!-- <span class="sprite-star"></span> -->
+                            <img src="images/aspi/star.png" alt="star">
+                        </div>
+                    </div>
+                    <div class="inner-slider owl-carousel">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                        <img src="images/aspi/slide1.jpg" alt="resident-image">
+                    </div>
+                    <div class="possession-wrp">
+                        <p>Possession Date: <span>Oct 2019</span></p>
+                        <p><span>2, 3 BHK</span> | <span>Price: 2.5 to 5 Cr</span></p>
+                    </div>
+                    <div class="slide-footer">
+                        <p>Offer : <span>5:90:5 Scheme</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section residential Ends -->

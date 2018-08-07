@@ -49,8 +49,8 @@ function basic_preprocess_html(&$variables) {
 /**
  * Prepares variables for the field.html.twig template.
  */
-function basic_preprocess_field(&$variables, $hook) {
+function lodha_preprocess_node(&$variables) {
   // Make additional variables available to the template.
-  $variables['bundle'] = $variables['element']['#bundle'];
+  kint($variables);
 }
 
